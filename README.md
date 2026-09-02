@@ -1,9 +1,6 @@
 ````markdown
-## 1. Diagram Pohon Komponen
-
 Aplikasi Sneaker Store menggunakan `App.jsx` sebagai Parent Component yang mengelola state utama dan mengatur komunikasi dengan component-component Child melalui Props dan Event Callback.
 
-```text
 App.jsx
 │
 ├── Header.jsx
@@ -56,14 +53,13 @@ Pada bagian keranjang, `App.jsx` mengirim Props `cart` kepada `Cart.jsx` untuk m
 
 Dengan struktur tersebut, seluruh state utama tetap dikelola di `App.jsx`, sedangkan component Child bertugas menerima data melalui Props dan menjalankan aksi melalui Event Callback yang dikirim dari Parent Component.
 
-````markdown
+
 ## 2. Bedah Code
 
 ### A. Pengelolaan State pada `App.jsx`
-
+````markdown
 State utama aplikasi dikelola pada `App.jsx` menggunakan `useState`. Terdapat tiga state utama, yaitu `search`, `selectedBrand`, dan `cart`.
-
-```jsx
+``` jsx
 const [search, setSearch] = useState('');
 const [selectedBrand, setSelectedBrand] = useState('ALL');
 const [cart, setCart] = useState([]);
