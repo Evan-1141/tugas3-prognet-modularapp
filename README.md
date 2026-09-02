@@ -1,3 +1,4 @@
+## 1. Diagram Pohon Componen
 ````markdown
 Aplikasi Sneaker Store menggunakan `App.jsx` sebagai Parent Component yang mengelola state utama dan mengatur komunikasi dengan component-component Child melalui Props dan Event Callback.
 
